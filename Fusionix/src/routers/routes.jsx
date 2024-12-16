@@ -4,9 +4,12 @@ import { createBrowserRouter } from "react-router-dom";
 
 import App from '../App.jsx';
 import Register from "../pages/Register.jsx";
+import Login from "../pages/Login.jsx";
 
 // Action 
 import registerAction  from "./actions/registerAction.js";
+
+
 
 const router = createBrowserRouter([
     {
@@ -17,6 +20,11 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register />,
         action: registerAction,
+    },
+    {
+        path: '/login',
+        element: <Login />,
+    
     },
 ]); 
 
