@@ -12,7 +12,7 @@ function PageTitle({title}) {
   );
 };
 
-PageTitle.prototype = {
+PageTitle.propTypes = {
     title: PropTypes.string,
 };
 

@@ -75,7 +75,7 @@ const LinearProgress = ({ classes = '' }) => {
     )
 }
 
-LinearProgress.PropTypes = {
+LinearProgress.propTypes = {
     classes: PropTypes.string,
 }
 
