@@ -103,7 +103,7 @@ export default {
           surfaceDim: '#1A141B',
           surfaceBright: '#302A31',
           surfaceContainerLowest: '#120F13',
-          surfaceContainerLow: '#1C161E',
+          surfaceContainerLow: '#272529',
           surfaceContainer: '#211B23',
           surfaceContainerHigh: '#2A242C',
           surfaceContainerHighest: '#342E36',

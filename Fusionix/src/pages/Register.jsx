@@ -55,6 +55,7 @@ function Register() {
 
         <div className="relative w-screen h-dvp p-2 grid grid-cols-1 lg:grid-cols-[1fr,1.2fr] lg:gap-2">
             <div className="flex flex-col p-4">
+                
                 <Link
                     to={'/'}
                     className="max-w-max mb-auto mx-auto lg:mx-0"
