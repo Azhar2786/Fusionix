@@ -9,9 +9,12 @@ import TopAppBar from "./components/TopAppBar"
 import Sidebar from "./components/Sidebar"
 import PromptField from "./components/PromptField"
 import Greetings from "./pages/Greetings"
+import { Outlet, useParams } from "react-router-dom"
 
 
 function App() {
+  // Get the URL parameters.
+  const params = useParams()
 
   /**
    * Use a custom hook to manage the sidebar open state.
@@ -39,7 +42,11 @@ function App() {
           {/* Main content */}
           <div className="px-5 pb-5 flex flex-col overflow-y-auto">
             <div className="max-w-[840px] w-full mx-auto grow">
-              <Greetings/>
+              {params.conversationId ?(
+                <Outlet /> // Conversation
+              ) : (
+                <Greetings />
+              )}
             </div>
           </div>
 

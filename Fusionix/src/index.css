@@ -351,8 +351,8 @@
     @apply aspect-square
     bg-light-surfaceContainerHighest
     dark:bg-dark-surfaceContainerHighest
-    min-w-[32px]
-    min-h-[32px]
+    max-w-[32px]
+    max-h-[32px]
     rounded-full
     overflow-hidden;
   }

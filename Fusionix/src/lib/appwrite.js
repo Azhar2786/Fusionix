@@ -1,4 +1,4 @@
-import { Client, Account, Avatars } from "appwrite";
+import { Client, Account, Avatars, Databases } from "appwrite";
 
 /**
  * Initialize Appwrite Client
@@ -25,4 +25,9 @@ const account = new Account(client);
 
  export const avatars = new Avatars(client);
 
-export default account ;
+/**
+ * Initial appwrite databases
+ */
+export const databases = new Databases(client);
+
+export default account;
