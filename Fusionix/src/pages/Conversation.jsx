@@ -4,6 +4,7 @@ import { useLoaderData } from "react-router-dom";
 
 import PageTitle from "../components/PageTitle";
 import UserPrompt from "../components/UserPrompt";
+import AiResponse from "../components/AiResponse";
 
 const Conversation = () => {
     const { conversation : {title, chats } ,} = useLoaderData() || {};
@@ -20,7 +21,8 @@ const Conversation = () => {
                 {/* User Prompt */}
                 <UserPrompt text={chat.user_prompt} />
 
-                <p>{chat.ai_response}</p>
+                {/* AiResponse */}
+                <AiResponse aiResponse={chat.ai_response}/>
             </div>
         ))}
       </motion.div>
